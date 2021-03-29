@@ -1,0 +1,49 @@
+div.dataTables_wrapper div.dataTables_length label {
+  content: none;
+}
+
+//modify
+
+.dataTables_wrapper .dataTable thead .sorting:before,
+.dataTables_wrapper .dataTable thead .sorting_asc:before,
+.dataTables_wrapper .dataTable thead .sorting_asc_disabled:before,
+.dataTables_wrapper .dataTable thead .sorting_desc:before,
+.dataTables_wrapper .dataTable thead .sorting_desc_disabled:before {
+  content: "";
+}
+
+.dataTables_wrapper .dataTable thead .sorting:after,
+.dataTables_wrapper .dataTable thead .sorting_asc:after,
+.dataTables_wrapper .dataTable thead .sorting_asc_disabled:after,
+.dataTables_wrapper .dataTable thead .sorting_desc:after,
+.dataTables_wrapper .dataTable thead .sorting_desc_disabled:after {
+  content: "";
+}
+
+.dataTables_wrapper .dataTable thead[data-test="table-foot"] {
+  display: none;
+}
+
+// .dataTables_paginate .page-link[aria-label="Previous"] span {
+//   display: none;
+// }
+
+// .dataTables_paginate .page-link[aria-label="Previous"]:before {
+//   content: "Truoc";
+// }
+
+// .dataTables_paginate .page-link[aria-label="Next"] span {
+//   display: none;
+// }
+
+// .dataTables_paginate .page-link[aria-label="Next"]:before {
+//   content: "Sau";
+// }
+
+// .dataTables_info {
+//   display: none;
+// }
+
+// div[data-test="datatable-info"]::before {
+//   content: "Hiện 1 đến 9 trên tổng 9 văn bản";
+// }

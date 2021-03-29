@@ -1,0 +1,55 @@
+.func-title {
+  color: $green-6;
+}
+
+.header-doc {
+  background: $gray-1 !important;
+}
+
+// .card-group-doc {
+//   .card-first {
+//     border-right: 1px solid $gray-2;
+//   }
+//   @media (max-width: 991px) {
+//     display: block;
+//     .card-first {
+//       border-right: none;
+//     }
+//   }
+//}
+
+.card-group-doc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .card-first {
+    border-right: 1px solid $gray-2;
+  }
+  .card-second {
+    border-right: 1px solid $gray-2;
+  }
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr 1fr;
+    .card-second {
+      border-right: none;
+    }
+
+    .card-third {
+      .card.second {
+        border-right: 1px solid $gray-2;
+      }
+    }
+  }
+}
+
+.text-tag {
+  text-align: right;
+  @media (max-width: 760px) {
+    text-align: left;
+    margin-left: 88px;
+  }
+}
+
+.border-span {
+  border: 1px solid $gray-2;
+  width: 200px;
+}

@@ -1,0 +1,54 @@
+.hnd-login-form {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+}
+
+.hnd-login-form-body {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hnd-text-forgot {
+  color: #ff0000;
+}
+
+.hnd-username-fontAwesome {
+  background-image: url("../assets/images/user.png");
+  background-size: 6%;
+  background-position: 97% 60%;
+  background-repeat: no-repeat;
+}
+
+.hnd-password-fontAwesome {
+  background-image: url("../assets/images/lock.png");
+  background-size: 5%;
+  background-position: 97% 50%;
+  background-repeat: no-repeat;
+}
+
+//modify
+.login-form {
+  height: 100vh;
+  width: 100vw;
+  float: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/images/image.png");
+  background-size: cover;
+}
+
+.login-form form {
+  position: absolute;
+  top: auto;
+  z-index: 2;
+  left: auto;
+  transform: none;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 18px 37.7px 15.3px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 18px 37.7px 15.3px rgba(0, 0, 0, 0.07);
+  box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.25);
+}

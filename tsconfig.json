@@ -1,26 +1,33 @@
 {
   "compilerOptions": {
+    "outDir": "./dist/",
+    "module": "esnext",
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
     "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "strict": false,
+    "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "typeRoots": ["node_modules/@types", "src/types", "./typings"],
+    "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "noEmit": true
   },
+  "exclude": ["node_modules*/*.spec.ts", "**/*.test.ts", "./built/**/*"],
   "include": [
-    "src"
+    "src",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "declaration.d.ts",
+    "src/types/images.d.ts"
   ]
 }

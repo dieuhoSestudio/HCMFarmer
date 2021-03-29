@@ -1,0 +1,16 @@
+input[type="radio"] {
+  border: 1px solid $gray-3;
+  padding: 0.5em;
+  -webkit-appearance: none;
+}
+
+input[type="radio"]:checked {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg)
+    no-repeat center center;
+  background-size: 8px 8px;
+  background-color: $green-6;
+}
+
+input[type="radio"]:focus {
+  outline-color: transparent;
+}

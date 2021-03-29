@@ -1,0 +1,95 @@
+// $black-1: rgba(0, 0, 0, 0.75);
+// $green-1: rgba(42, 133, 87, 0.8);
+// $green-2: rgba(28, 232, 130, 0.2);
+// $green-3: #1ce882;
+// $green-4: #2a8557;
+// $green-5: #00b85c;
+// $green-6: #219653;
+
+.sidebar-menu {
+  background: $black-1;
+  //   width: 418px;
+}
+
+.sidebar-header {
+  background: $black-1 !important;
+}
+
+.main-menu {
+  padding: 0px !important;
+  height: 100% !important;
+
+  .menu-inner {
+    @media only screen and (min-height: 750px) {
+      overflow-y: hidden !important;
+    }
+  }
+}
+
+.metismenu {
+  li {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 25px;
+      padding: 10px;
+      color: #fff;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      height: 80px;
+
+      span {
+        margin-left: 0px;
+      }
+      &:after {
+        content: "";
+      }
+    }
+    ul {
+      li {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  li.mm-active > a:after {
+    content: "";
+  }
+}
+
+.metismenu > li > a {
+  padding-left: 0px !important;
+}
+
+.metismenu li.mm-active > a,
+.metismenu li:hover > a {
+  background: $green-1;
+}
+
+.metismenu li.mm-active ul li:hover > a {
+  font-size: 20px;
+}
+
+.metismenu li.mm-active ul li.mm-active > a {
+  font-size: 20px;
+  border-left: 7px solid $green-3;
+}
+
+.metismenu li li a {
+  padding: 8px 0px;
+}
+
+.metismenu li ul {
+  padding-left: 0px;
+}
+
+.metismenu > li.mm-active > a svg,
+.metismenu > li.mm-active > a {
+  background: $green-2;
+  font-size: 27px;
+  color: $green-3;
+}

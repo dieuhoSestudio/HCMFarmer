@@ -1,0 +1,32 @@
+.custom-file-label,
+.custom-file-input,
+.custom-file {
+  height: 34px;
+  padding: 6px 12px;
+}
+
+.custom-file-label:after {
+  padding: 6px 6px;
+}
+
+.col-choose-file {
+  height: 34px;
+}
+
+.div-input-text {
+  height: 74px;
+}
+
+//Radio
+.form-check-input {
+  margin-top: 0px;
+  border: 1px solid rgba(170, 170, 170, 0.3);
+  margin-bottom: 2px;
+}
+
+//select
+.form-control {
+  &:focus {
+    border-color: $green-6;
+  }
+}

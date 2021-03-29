@@ -1,0 +1,147 @@
+$black-1: rgba(0, 0, 0, 0.75);
+$green-1: rgba(42, 133, 87, 0.8);
+$green-2: rgba(28, 232, 130, 0.2);
+$green-3: #1ce882;
+$green-4: #2a8557;
+$green-5: #00b85c;
+$green-6: #219653;
+$gray-1: #e2e2e2;
+$gray-2: #dee2e6;
+$gray-3: rgba(170, 170, 170, 0.3);
+
+//Modify
+.header-area {
+  padding: 0 0 0 0px;
+}
+
+.header-sidebar {
+  z-index: 100;
+}
+
+.sidebar_collapsed {
+  .nav-btn {
+    // background: $green-1;
+    background: red;
+
+    // @media (min-width: 991px) and (max-width: 1364px) {
+    //   z-index: 100;
+    // }
+    // @media only screen and (max-width: 991px) {
+    //   z-index: 100;
+    // }
+
+    // @media only screen and (max-width: 480px) {
+    // }
+  }
+}
+
+.search-div {
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.img-avatar {
+  margin: 10px 0;
+  height: 40px;
+  width: 40px;
+}
+
+.bell-i {
+  color: #ffffff;
+  font-size: 35px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bell-i-noti {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.name-div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.notify-box {
+  .notify-title {
+    background: $green-6;
+  }
+}
+
+//Plus
+// Header
+.hnd-header {
+  height: 190px;
+  position: relative;
+  background: url(../assets/images/fammer.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  z-index: 0;
+}
+
+.hnd-header-left-1 {
+  position: absolute;
+  left: 0%;
+  right: 40%;
+  top: 0%;
+  bottom: 30%;
+  // background: #2a8557;
+  border-top: 134px solid $green-4;
+  border-right: 100px solid transparent;
+  z-index: 3;
+  @media (max-width: 991px) {
+    width: 100vw;
+    border-right: 0px solid transparent;
+  }
+}
+
+.hnd-header-left-2 {
+  position: absolute;
+  left: 2.78%;
+  right: 38%;
+  top: 0%;
+  bottom: 30%;
+  z-index: 2;
+  border-top: 134px solid $green-5;
+  border-right: 100px solid transparent;
+}
+
+.hnd-header-left-3 {
+  position: absolute;
+  left: 5.56%;
+  right: 36%;
+  top: 0%;
+  bottom: 30%;
+  z-index: 1;
+  border-top: 134px solid $green-6;
+  border-right: 100px solid transparent;
+}
+
+.hnd-content {
+  z-index: 4;
+  position: relative;
+  width: 47%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+  @media (max-width: 480px) {
+    justify-content: start;
+    .hnd-title {
+      display: none;
+    }
+  }
+}
+
+.hnd-logo-header {
+  height: 133px;
+}
+
+//Sidebar header
+
+.hnd-sidebar-header {
+  background: $green-6;
+}
